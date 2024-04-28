@@ -14,7 +14,7 @@ resource "azurerm_network_interface" "NIC" {
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = "/subscriptions/f77f8861-0719-41bd-9b2b-8c1f84927f6a/resourceGroups/Shyam/providers/Microsoft.Network/virtualNetworks/virtualnetwork_shyam/subnets/Frontend_subnet"
+    subnet_id                     = "/subscriptions/62fad740-6a6b-46ec-8250-df646091120f/resourceGroups/Shyam/providers/Microsoft.Network/virtualNetworks/virtualnetwork_shyam/subnets/Frontend_subnet"
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = azurerm_public_ip.PUBLICIP[each.key].id
   }
